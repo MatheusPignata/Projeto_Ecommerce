@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="shortcut icon" href="https://images2.imgbox.com/13/b6/VI2itH5f_o.png">
+    <title>Cliente</title>
+</head>
+
+<body>
+
+    <header><img src="https://images2.imgbox.com/13/b6/VI2itH5f_o.png" onclick="goHome()"></header>
+    <div class="meio">
+        <div class="login">
+            <h5>LOGIN</h5>
+            <form method="post">
+                <input type="text" placeholder="E-mail" id="log_email">
+                <div>
+                    <input type="password" placeholder="Senha" id="log_senha" onkeyup="setPw(this)">
+                    <i class="bi bi-eye-slash" id="togglePassword" onclick="pwReview(this)"></i>
+                </div>  
+            </form>
+            <button type="submit" id="btn_login" onclick="login()">Login</button>
+        </div>
+
+        <div class="cadastro">
+            <h5>CADASTRO</h5>
+            <form action="#" class="cadastroForm">
+                <input type="text" placeholder="Nome Completo" id="cad_nome" required>
+                <input type="text" placeholder="CPF" id="cad_cpf" oninput="maskCPF(this)" required>
+                <input type="text" placeholder="E-mail" id="cad_email" required>
+                <div>
+                    <input type="password" placeholder="Senha" id="cad_senha" minlength="8" required>
+                    <i class="bi bi-eye-slash" id="togglePassword" onclick="pwReview(this)"></i>
+                </div>
+                <div>
+                    <input type="password" placeholder="Confirme sua senha" id="cad_senha2" minlength="8" required>
+                    <i class="bi bi-eye-slash" id="togglePassword" onclick="pwReview(this)"></i>
+                </div>
+                <button type="submit" id="btn_cadastro"  value="Cadastrar">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="pags">
+            <div class="tes">
+                <p>Páginas</p>
+                <a>Home</a>
+                <a>Promoções</a>
+                <a>Sobre nós</a>
+            </div>
+            <div class="tes">
+                <p>Mídias sociais</p>
+                <a>Instagram</a>
+                <a>Facebook</a>
+                <a>Twittter</a>
+                <a>Youtube</a>
+            </div>
+        </div>
+        <div class="atend">
+            <div class="tes">
+                <p>Atendimento</p>
+                <h5>Horário de atendimento: 08:00 às 20:00 - Segunda a Sábado, horário de Brasília (exceto domingo e feriados)</h5>
+                <h5>Endereço: Rua General Osório, 539 - 10° andar - Centro Pirassununga/SP - CEP: 13630-970</h5>
+                <p>Central SAC</p>
+                <h5>(19)707070, se não der, 70 de novo</h5>
+                <p>E-mail</p>
+                <h5>faleconosco@tabaum.com.br</h5>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright © 2021 All Rights Reserved by TaBaum.</div>
+
+</body>
+
+<script src="script/md5.js"></script>
+<script src="script/script.js"></script>
+
+</html>

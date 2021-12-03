@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="https://images2.imgbox.com/13/b6/VI2itH5f_o.png">
+    <title>TaBaum</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="https://balkonoversized.com.br/wp-content/uploads/2020/11/img_568656.png" class="avatar fantasma">
+        <img src="https://images2.imgbox.com/13/b6/VI2itH5f_o.png" alt="image host" class="logo" onclick="goHome()" />
+        <div class="icon">
+            <a href="../login_cadastro/index.html"><img src="https://balkonoversized.com.br/wp-content/uploads/2020/11/img_568656.png"></a>
+            <p id="logado"></p>
+        </div>
+    </div>
+
+    <div class="modal model">
+        <div class="square">
+            <span onClick="closeModal()">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106830.png" />
+            </span>
+            <div class="lista">
+                <div class="pedido model">
+                    <div class="cima">
+                        <p class="numeroPedido">Pedido x</p>
+                        <p class="data"> 28/10/21</p>
+                    </div>
+                    <div class="todosOsProdutos">
+                        <div class="itemPedido">
+                            <p class="nome"></p>
+                            <div>
+                                <p class="qntd"></p>
+                                <p class="valor"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baixo">
+                        <p>Total do pedido: </p>
+                        <p class="total">Total do pedido: 58585</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="meio">
+        <div class="produtos">
+            <div class="produto model">
+                <img src="https://images.kabum.com.br/produtos/fotos/91031/monitor-gamer-aoc-led-25-widescreen-full-hd-hdmi-display-port-gsync-240hz-1ms-altura-ajustavel-ag251fg_1545917494_gg.jpg">
+                <div class="prod_desc">
+                    <div class="top">
+                        <h3>Monitor Gamer AOC Agon 24.5' LED, Wide, 240 Hz, Full HD, 1ms, G-Sync, HDMI/DisplayPort, Ajuste de Altura - AG251FG</h3>
+                        <button onclick="apagar(this)"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-coloricon-1/21/52-512.png"></button>
+                    </div>
+                    <div class="valor_quantidade">
+                        <h4></h4>
+                        <h5></h5>
+                        <p></p>
+                        <div>
+                            <button id="up" onclick="qntd(this)"><img src="http://simpleicon.com/wp-content/uploads/arrow-18.png" class="arrowUp"></button>
+                            <button id="down" onclick="qntd(this)"><img src="http://simpleicon.com/wp-content/uploads/arrow-18.png" class="arrowDown"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="valor">
+            <h2>Total da compra</h2>
+            <p class="valorTotal"></p>
+            <h3>Opções de pagamento</h3>
+            <div class="pagamento">
+                <div id="pix">
+                    <input type="radio" name="pagamento">
+                    <p class="pix"></p>
+                </div>
+                <div class="cartao">
+                    <div class="opcao model">
+                        <input type="radio" name="pagamento">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn_finalizarCompra" onclick="finalizarCompra()">Finalizar a compra</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="itens_footer">
+            <div>
+                <div class="tes">
+                    <p>Mídias sociais</p>
+                    <a>Instagram</a>
+                    <a>Facebook</a>
+                    <a>Twittter</a>
+                    <a>Youtube</a>
+                </div>
+            </div>
+            <div>
+                <div class="tes">
+                    <p>Atendimento</p>
+                    <h5>Horário de atendimento: 08:00 às 20:00 - Segunda a Sábado, horário de Brasília (exceto domingo e feriados)</h5>
+                    <h5>Endereço: Rua General Osório, 539 - 10° andar - Centro Pirassununga/SP - CEP: 13630-970</h5>
+                </div>
+            </div>
+            <div>
+                <div class="tes">
+                    <p>Central SAC</p>
+                    <h5>(19)707070, se não der, 70 de novo</h5>
+                    <p>E-mail</p>
+                    <h5>faleconosco@tabaum.com.br</h5>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2021 All Rights Reserved by TaBaum.</div>
+    </div>
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

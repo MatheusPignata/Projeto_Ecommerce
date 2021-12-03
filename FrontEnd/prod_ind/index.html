@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="https://images2.imgbox.com/13/b6/VI2itH5f_o.png">
+    <title>TaBaum</title>
+</head>
+<body onload="Nota()">
+    <nav class="submenu">
+        <div class="btn_x"></div>
+        <header><img src="https://images2.imgbox.com/13/b6/VI2itH5f_o.png" alt="image host"  class="logo" onclick="goHome()"/></header>
+        <ul>
+          <li><a href="#">Categorias</a>
+            <ul>
+                <li><a onclick="categoria(this)">Computadores</a></li>
+                <li><a onclick="categoria(this)">Placa Mãe</a></li>
+                <li><a onclick="categoria(this)">Processador</a></li>
+                <li><a onclick="categoria(this)">Memória ram</a></li>
+                <li><a onclick="categoria(this)">Armazenamento</a></li>
+                <li><a onclick="categoria(this)">Fonte</a></li>
+                <li><a onclick="categoria(this)">Placa de video</a></li>
+                <li><a onclick="categoria(this)">Resfriamento</a></li>
+                <li><a onclick="categoria(this)">Perifericos</a>
+            </ul>
+          </li>
+          <li><a href="../carrinho/index.html">Carrinho</a></li>
+          <li><a href="">Suporte</a></li>
+        </ul>
+    </nav>
+    
+    <div class="header">
+        <div class="btn_burguer"></div>
+        <div></div>
+        <div class="icon">
+            <a onclick="cadastro()"><img src="https://balkonoversized.com.br/wp-content/uploads/2020/11/img_568656.png"></a> 
+            <p id="logado"></p> 
+            <div id="statuspedido" onclick="statusPedido()">Pedidos</div>
+            <div id="sair" onclick="sair()">Sair</div>
+        </div>
+    </div>
+
+    <div class="modal model">
+        <div class="square">
+            <span onClick="closeModal()">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106830.png" />
+            </span>
+            <div class="lista">
+                <div class="pedido model">
+                    <div class="cima">
+                        <p class="numeroPedido">Pedido x</p>
+                        <p class="data"> 28/10/21</p>
+                    </div>
+                    <div class="todosOsProdutos">
+                        <div class="itemPedido">
+                            <p class="nome"></p>
+                            <div>
+                                <p class="qntd"></p>
+                                <p class="valor1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baixo">
+                        <p>Total do pedido: </p>
+                        <p class="total">Total do pedido: 58585</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="imprimir" onclick="imprimir()">Imprimir</button>
+        </div>
+    </div>
+
+    <div class="produto">
+        <h2 class="title">Monitor Gamer AOC Agon 24.5' LED, Wide, 240 Hz, Full HD, 1ms, G-Sync, HDMI/DisplayPort, Ajuste de Altura - AG251FG</h2>
+        <div class="presentation">
+            <div class="prod_img">
+                 <img src="https://images.kabum.com.br/produtos/fotos/91031/monitor-gamer-aoc-led-25-widescreen-full-hd-hdmi-display-port-gsync-240hz-1ms-altura-ajustavel-ag251fg_1545917494_gg.jpg" class="img">
+            </div>
+            <div class="prod_venda">
+                <div class="promo"><img src="https://themes.kabum.com.br/conteudo/layout/1994/banner_img.jpg"></div>
+                <div class="valores">
+                    <div class="nota"><img src='https://images2.imgbox.com/4f/7f/CQPR6d4B_o.png'><div class="bk_nota"> </div></div>
+                    <div>
+                        <p class="valor">R$ 5.682,11</p>
+                        <p class="valor_desconto">R$ 3.999,90</p>
+                        <p class="info">Em até 12x de R$ 120,36 sem juros no cartão Ou em 1x no cartão com até 10% OFF</p>
+                    </div>
+                </div>
+                <button class="btn_comprar" onclick="compra()">Comprar<img src="https://cdn-icons-png.flaticon.com/512/126/126510.png"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+    </div>
+
+    <div class="meio">
+        <div class="produtos"  onscroll="bereguejhonson(this)">
+            <a href="../prod_ind/index.html" class="card model">
+                <img src="https://images.kabum.com.br/produtos/fotos/91031/monitor-gamer-aoc-led-25-widescreen-full-hd-hdmi-display-port-gsync-240hz-1ms-altura-ajustavel-ag251fg_1545917494_gg.jpg">
+                <div class="prod_desc">
+                    <p class="teste">Monitor Gamer AOC Agon 24.5' LED, Wide, 240 Hz, Full HD, 1ms, G-Sync, HDMI/DisplayPort, Ajuste de Altura - AG251FG</p>
+                    <h5>R$ 5.682,11</h5>
+                    <h2>R$ 3.999,90</h2>
+                </div>
+            </a>
+        </div>
+        <div class="degrade"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="cat">
+            <div class="tes">
+                <p>Categorias</p>
+                <a onclick="categoria(this)">Computadores</a>
+                <a onclick="categoria(this)">Placas-Mãe</a>
+                <a onclick="categoria(this)">Processadores</a>
+                <a onclick="categoria(this)">Memória</a>
+                <a onclick="categoria(this)">Armazenamento</a>
+                <a onclick="categoria(this)">Fontes</a>
+                <a onclick="categoria(this)">Placas de Vídeo</a>
+                <a onclick="categoria(this)">Resfriamento</a>
+                <a onclick="categoria(this)">Perifericos</a>
+            </div>
+        </div>
+        <div class="pags">
+            <div class="tes">
+                <p>Páginas</p>
+                <a>Home</a>
+                <a>Promoções</a>
+                <a>Sobre nós</a>
+            </div>
+            <div class="tes">
+                <p>Mídias sociais</p>
+                <a>Instagram</a>
+                <a>Facebook</a>
+                <a>Twittter</a>
+                <a>Youtube</a>
+            </div>
+        </div>
+        <div class="atend">
+            <div class="tes">
+                <p>Atendimento</p>
+                <h5>Horário de atendimento:
+                    08:00 às 20:00 -
+                    Segunda a Sábado,
+                    horário de Brasília
+                    (exceto domingo e feriados)</h5>
+                <h5>Endereço:
+                    Rua General Osório, 539 -
+                    10° andar - Centro
+                    Pirassununga/SP - CEP: 	13630-970</h5>
+                <p>Central SAC</p>
+                <h5>(19)707070, se não der, 70 de novo</h5>
+                <p>E-mail</p>
+                <h5>faleconosco@tabaum.com.br</h5>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright © 2021 All Rights Reserved by TaBaum.</div>
+</body>
+<script src="script/script.js"></script>
+</html>
